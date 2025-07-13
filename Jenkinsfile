@@ -1,4 +1,4 @@
 @Library('base-pipeline-lib') _
 basePipeline(
-  repoUrl: 'https://github.com/Supremeorg/flaskapp-1.git'
+    repoUrl: 'https://github.com/Supremeorg/flaskapp01.git'
 )
