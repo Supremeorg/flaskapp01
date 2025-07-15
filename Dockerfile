@@ -1,14 +1,15 @@
-FROM python:3.9-alpine3.20
+# Use a secure, minimal base image
+FROM python:3.13.3-alpine3.20
 
 # Set workdir
 WORKDIR /app
 
-# Copy requirements and install
+# Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy app files
+# Copy all application files
 COPY . .
 
-# Default command
+# Run the application
 CMD ["python", "app.py"]
